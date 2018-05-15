@@ -196,5 +196,8 @@
     }
 }
 
-
-
+@media all and (min-width: 400px) and (max-width: 600px){
+    .loginButtons > button {
+        height: 11vh;
+    }
+}
