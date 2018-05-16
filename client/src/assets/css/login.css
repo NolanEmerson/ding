@@ -58,6 +58,7 @@
 }
 
 .loginButton, .registerButton {
+    min-height: 8vh;
     font-size: 2rem;
     width: 53%;
     margin: 2%;
@@ -201,3 +202,4 @@
         height: 11vh;
     }
 }
+
