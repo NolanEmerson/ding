@@ -14,11 +14,11 @@ View this project live [HERE](https://dingdinner.com)
 
 ## Features
 
-- [x] Geolocation to find trails nearby
-- [x] Driving directions
-- [x] Trail sorting filters
-- [x] Localized forecast
-- [x] Design made for Desktop and Mobile use
+- [x] User Login
+- [x] Dietary restriction filter
+- [x] Allergy restriction filter
+- [x] Custom grocery list
+- [x] Designed mobile first
 
 
 ## Technologies Used
