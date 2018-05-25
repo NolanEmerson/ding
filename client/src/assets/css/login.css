@@ -1,0 +1,205 @@
+@font-face {
+    font-family: 'LaBelleAurore';
+    src: local('LaBelleAurore'), url(../fonts/LaBelleAurore.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.loginContainer {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    background-image: url('../../assets/images/dingHDBack.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.loginContainer *  {
+    font-size: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.loginDarken {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, 0));
+    pointer-events: none;
+    z-index: -1;
+}
+
+.loginLogo {
+    /* padding-top: 35%; */
+    padding-top: 6%;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.loginSlogan {
+    font-size: 1.8rem;
+    margin-top: 1%;
+    font-family: 'LaBelleAurore';
+}
+
+.loginButtons {
+    text-align: center;
+    margin-top: 7%;
+}
+
+.loginButton, .registerButton {
+    min-height: 8vh;
+    font-size: 2rem;
+    width: 53%;
+    margin: 2%;
+    font-family: 'Oxygen', sans-serif;
+    text-transform: lowercase;
+    text-shadow: 1px 1px black, 2px 2px black;
+}
+
+.loginButtons > div > .row {
+    margin-top: 5%;
+}
+
+.validationText1, .checkmark {
+    display: inline-block;
+    color: black;
+}
+
+.checkmark {
+    color: green !important;
+}
+
+.validationText1, .validationText2 {
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 3px gray;
+    position: relative;
+    bottom: -5%;
+    left: 0%;
+    color: black;
+    text-shadow: none;
+}
+
+.validationText2 {
+    bottom: -35%;
+}
+
+.validationText1 *, .validationText2 * {
+    display: inline;
+    color: black;
+    text-shadow: none;
+}
+
+.row > .inputField > input {
+    margin-bottom: 0;
+}
+
+.inputField {
+    position: relative;
+}
+
+.inputField label {
+    text-shadow: 1px 1px black, 2px 2px black;
+}
+
+.row > div.inputField > input {
+    background-color: rgba(0, 0, 0, .4);
+    box-shadow: 1px 1px 2px black;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.dingOrange {
+    background-color: #f75211;
+}
+
+.dingTeal {
+    background-color: #26a69a;
+}
+
+.loginSubmit, .registerSubmit {
+    text-shadow: 1px 1px black, 2px 2px black;
+}
+
+.registerButtonHolder, .loginButtonHolder {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.loginContainer .loginButtonHolder .btn {
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: nowrap;
+    height: 8vh;
+}
+
+@media all and (min-width: 600px) and (orientation: landscape) {
+    .loginContainer {
+        width: 60%;
+    }
+
+    .validationText1, .validationText2 {
+        width: 80%;
+    }
+
+    .validationText1, .validationText1 div, .validationText2 div {
+        font-size: 2.5vmin;
+    }
+}
+
+@media all and (max-height: 568px) {
+    .registerButtonHolder > button,
+    .loginButtonHolder > button {
+        height: 7vh;
+    }
+
+    .loginButtons > button {
+        height: 8.5vh;
+    }
+}
+
+@media screen and (max-height: 480px) {
+    .loginContainer > .loginLogo {
+        padding-top: 5%;
+    }
+
+    .loginButtons {
+        margin-top: 0%;
+    }
+
+    .loginButtons > div > .row {
+        margin-top: 1%;
+        margin-bottom: 0;
+    }
+
+    .row > div.inputField > input {
+        margin-bottom: 0;
+    }
+    
+    .registerButtonHolder,
+    .loginButtonHolder {
+        margin-top: 7%;
+    }
+}
+
+@media all and (min-width: 400px) and (max-width: 600px){
+    .loginButtons > button {
+        height: 11vh;
+    }
+}
+

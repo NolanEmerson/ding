@@ -1,0 +1,22 @@
+{
+  "name": "dinglfz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaneMJ/c1.18_FoodTinder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KaneMJ/c1.18_FoodTinder/issues"
+  },
+  "homepage": "https://github.com/KaneMJ/c1.18_FoodTinder#readme",
+  "dependencies": {
+    "npm": "^5.8.0"
+  }
+}

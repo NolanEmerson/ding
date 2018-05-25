@@ -1,0 +1,400 @@
+.mealsContainer {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1rem;
+    background-image: url('../../assets/images/dingHDBack_Dark.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+.mealsMainArea {
+    height: 80%;
+    width: 100%;
+    margin: 0;
+    padding: 10vh 0;
+}
+
+.mealConfirmContainer {
+    height: 13vh;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.mealsItem {
+    height: 30vh;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mealsShadowArea {
+    height: 70%;
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+    background: linear-gradient(to top, rgba(0, 0, 0, .7), rgba(0, 0, 0, 0));
+    text-shadow: 2px 2px 2px black;
+}
+
+.mealsText {
+    font-size: 1.5rem;
+    position: absolute;
+    white-space: pre-wrap;
+    width: 85%;
+    font-weight: bold;
+    bottom: 0%;
+    padding: 0 0 5px 5px;
+}
+
+.mealsCancel {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.detailsContainer {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1rem;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    font-family: 'Oxygen', cursive;
+    color: white;
+}
+
+.detailsTime {
+    margin-bottom: 6%;
+}
+
+.detailsMainArea {
+    width: 100%;
+    margin: 0;
+    padding: 10vh 0;
+    background-image: url('../../assets/images/dingHDBack_Dark.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.detailsContainer .detailsMainArea .collection {
+    margin-bottom: 0;
+}
+
+.detailsMainArea > h3, h5, div {
+    text-shadow: 1px 2px 2px black;
+}
+
+div.detailsIngredientsList > ul.collection,
+div.detailsInstructionsList > ul.collection {
+    margin-top: 11vh;
+}
+
+.detailsImg {
+    width: 100%;
+    border: 1px solid black;
+}
+
+.detailsIngredientsHead, .detailsInstructionsHead, .detailsNutritionHead {
+    cursor: pointer;
+    width: 33.3%;
+    font-size: 1rem;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid #e0e0e0;
+    padding: 2% 0;
+    background-color: #757575e7;
+}
+
+.detailsSelectedList {
+    background-color: #F75211;
+}
+
+.detailsIngredientsList, .detailsInstructionsList, .detailsNutritionList {
+    text-align: left;
+    font-size: 1rem;
+}
+
+.detailsIngredientsList > .collection, .detailsInstructionsList > .collection, .detailsNutritionList > .collection {
+    margin-top: 0 !important;
+}
+
+.detailsInstructionsList, .detailsNutritionList {
+    display: none;
+}
+
+.collection > .detailsListItem.collection-item {
+    background-color: #757575e7;
+}
+
+.mealsFooter {
+    bottom: 0;
+}
+
+.mealsMainArea .mealConfirmContainer {
+    margin: 0;
+    background: #191717a8;
+}
+
+.confirmTextArea {
+    padding: 0 .25rem !important;
+}
+
+.confirmTextArea > div {
+    text-shadow: 2px 2px 2px black;
+}
+
+.confirmHead {
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
+
+.confirmButton {
+    width: 70%;
+    height: 50%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.confirmCheck {
+    margin-top: 11%;
+}
+
+.completeButton {
+    margin-top: 3vh;
+}
+
+.mealCompleteGrey {
+    filter: grayscale(100%);
+}
+
+.mealIncomplete {
+    filter: grayscale(0%);
+}
+
+@media all and (min-width: 600px) and (orientation: portrait) {
+    .mealsContainer > .mealsMainArea > .mealConfirmContainer > .confirmTextArea {
+        margin-top: 1%;
+    }
+}
+
+@media all and (min-width: 540px) and (max-width: 990px) {
+    .detailsContainer .detailsMainArea .collection {
+        margin-top: 18vh;
+    }
+}
+
+@media all and (min-width: 490px) and (max-width: 540px) {
+    .detailsContainer .detailsMainArea .collection {
+        margin-top: 16vh;
+    }
+}
+
+@media all and (min-width: 430px) and (max-width: 490px) {
+    .detailsContainer .detailsMainArea .collection {
+        margin-top: 14vh;
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 340px) {
+    .detailsContainer .detailsMainArea .collection {
+        margin-top: 13vh;
+    }
+    .mealsContainer > .mealsMainArea > .mealConfirmContainer > .confirmTextArea {
+        margin-top: 3%;
+    }
+    .confirmButton {
+        height: 70%;
+    }
+}
+
+@media all and (max-width: 320px) {
+    .confirmTextArea {
+        margin-top: 4%;
+    }
+    .confirmButton {
+        height: 60%;
+    }
+}
+
+@media all and (max-width: 320px) and (max-height: 400px) {
+    .confirmTextArea {
+        margin-top: 0;
+    }
+    .confirmButton {
+        height: 90%;
+    }
+    .confirmCheck {
+        margin-top: 0;
+    }
+}
+
+@media all and (max-width: 600px) and (min-width: 340px) {
+    .confirmButton {
+        height: 70%;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 480px) {
+    .detailsContainer .detailsMainArea .collection {
+        margin-top: 24vh;
+    }
+    .mealsContainer > .mealsMainArea > .mealConfirmContainer > .confirmTextArea {
+        margin-top: -.5%;
+    }
+    .confirmButton {
+        height: 125%;
+    }
+}
+
+@media all and (min-width: 600px) and (orientation: landscape) {
+    .mealsContainer {
+        width: 60%;
+    }
+    
+    .mealsContainer > .headerBar,
+    .mealsContainer > .mealsMainArea > .detailsContainer > .headerBar {
+        height: 10%;
+    }
+
+    .mealsContainer > .mealsMainArea > .mealConfirmContainer > .confirmTextArea {
+        margin-top: 1%;
+        width: 100%;
+        margin-left: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .mealsContainer > .mealsMainArea {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .mealsContainer > .mealsMainArea > .mealConfirmContainer,
+    .mealsContainer > .mealsMainArea > .mealsItem {
+        width: 32.3%;
+        border: 1px solid black;
+        margin: .5% .5%;       
+    }
+
+    .mealsContainer > .mealsMainArea > .mealConfirmContainer {
+        height: 35vh;
+        align-items: center;
+    }
+
+    .mealsContainer > .mealsMainArea > .mealConfirmContainer > .confirmTextArea > div {
+        font-size: .7rem;
+    }
+
+    .mealsContainer > .mealsMainArea > .mealConfirmContainer > .col.s3 {
+        width: 0;
+        margin-right: 3.5vw;
+        margin-left: 0;
+        left: 0;
+        right: 0;
+    } 
+
+    .confirmButton {
+        width: 100vw;
+        height: 5.5vh;
+        display: flex;
+    }
+
+    .confirmButton > .confirmCheck {
+        margin-top: 0;
+        font-size: 1.5rem !important;
+    }
+
+    .confirmHead {
+        margin-bottom: 5vh;
+    }
+
+    .mealsText {
+        font-size: .7rem;
+    }
+
+    .mealsItem {
+        height: 35vh;
+        cursor: pointer;
+    }
+
+    .mealsCancel {
+        cursor: pointer;
+        font-size: 1rem;
+        bottom: 0%;
+        right: 3%;
+    }
+
+    /* .mealsCancel > *  {
+        border-radius: 50%;
+        box-shadow: 5px 5px 10px red, -5px 5px 10px red, 5px -5px 10px red, -5px -5px 10px red;
+        background-color: rgba(255, 0, 0, .8);
+    } */
+
+    .detailsContainer {
+        width: 60%;
+        left: 20%;
+    }
+
+    .detailsMainArea > img {
+        width: 60%;
+        margin-top: 5vh;
+        border-radius: 2%;
+    }
+
+    .detailsName {
+        font-size: 1.92rem;
+    }
+
+    .detailsTime {
+        font-size: 1.2rem;
+    }
+
+    .detailsIngredientsList > .collection,
+    .detailsInstructionsList > .collection,
+    .detailsNutritionList > .collection {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .detailsContainer > .headerBar,
+    .detailsContainer > .footer {
+        width: 60%;
+    }
+
+    .detailsContainer > .loaderModal {
+        left: -34%;
+    }
+
+    .mealsContainer > .mealsMainArea > .singleMeal {
+        width: 49%;
+        height: 98%;
+    }
+    
+    .mealsContainer > .mealsMainArea > .tripleMeal {
+        width: 100%;
+        height: 35vh;
+    }
+    
+}
+
+@media all and (min-width: 600px) and (min-height: 525px) {
+    .detailsIngredientsHead, .detailsInstructionsHead, .detailsNutritionHead {
+        font-size: .9rem;
+    }
+}

@@ -1,0 +1,96 @@
+.groceryContainer {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1rem;
+    background-image: url('../../assets/images/dingHDBack_Dark.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+}
+
+.mainArea {
+    position: relative;
+    min-height: 80%;
+    max-height: 80%;
+    width: 100%;
+    margin: 0;
+    padding: 0 5%;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    box-sizing: border-box;
+}
+
+.list {
+    text-align: left;
+}
+
+.item {
+    margin: 5%;
+    border-bottom: 2px solid #757575;
+    padding-bottom: 2%;
+}
+
+.check, .name {
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+label::before {
+    border-color: white;
+}
+
+label::after {
+    border-color: white;
+}
+
+[type="checkbox"].filled-in:not(:checked)+label::after {
+    border-color: white;
+    box-shadow: 1px 1px 1px black;
+    margin-top: 1.5%;
+}
+
+[type="checkbox"].filled-in:checked+label::after  {
+    margin-top: 1.5%;
+}
+
+[type="checkbox"].filled-in:checked+label::before  {
+    margin-top: 2.5%;
+}
+
+.checkbox-grey[type="checkbox"].filled-in:not(:checked)+label::after, .checkbox-grey[type="checkbox"].filled-in:checked+label::after {
+    background-color: #757575;
+    border-color: #757575;
+}
+
+.card-content {
+    text-shadow: 2px 2px 2px black;
+}
+
+@media all and (min-width: 600px) and (orientation: landscape) {
+    .groceryContainer {
+        width: 60%;
+    
+    }
+
+    .groceryContainer > .headerBar {
+        height: 10%;
+    }
+
+    .groceryContainer > .headerBar,
+    .groceryContainer > .footer {
+        width: 59.8%;
+    }
+
+    .groceryContainer > .mainArea > .center > .card-content {
+        font-size: 1.6rem;
+        margin: 5%;
+    }
+
+    .mainArea > .list > .item > label {
+        font-size: 1rem !important;
+    }
+}

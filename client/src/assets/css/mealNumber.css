@@ -8,10 +8,67 @@
     margin: 5%;
 }
 
-.grey {
-    background-color: grey;
-}
-
 .collection {
     margin-top: 10vh;
 }
+
+.mealButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.mealNumContainer {
+    margin: 0 auto;
+    padding-top: 10vh;
+    min-height: 100vh;
+    background-image: url('../../assets/images/dingHDBack_Dark.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+@media screen and (max-height: 480px) {
+    div.mealNumContainer > div.container > div.center > h4 {
+        font-size: 1.8rem !important;
+    }
+    div.mealNumContainer > div.container > div.button-column > a.button {
+        height: 40px;
+        margin: 2% auto;
+    }
+}
+
+@media all and (min-width: 600px) and (orientation: landscape) {
+    .mealNumContainer > .container > .button-column {
+        align-items: center;
+        flex-direction: row;
+        margin-top: 15vh !important;
+        justify-content: center;
+    }
+
+    .mealNumContainer > .container > .button-column > .button {
+        height: 10vh;
+        margin: 3vh .5vw;
+        /* padding: 0 1.3rem; */
+    }
+
+    .mealNumContainer {
+        width: 60%;
+    }
+
+    .mealNumContainer > .container > .center > .card-content {
+        font-size: 1.5rem !important;
+    }
+
+    .mealNumContainer > .container > .right > .container {
+        margin-top: 14vh;
+    }
+
+    .mealNumContainer > .container > .right > .container > button {
+        height: 8.5vh;
+        margin-right: 5vh;
+    }
+    
+} 
